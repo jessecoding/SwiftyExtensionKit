@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A3E4C76F218A892100BEBE40 /* SwiftyExtensionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E4C761218A892100BEBE40 /* SwiftyExtensionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3EC2A57218A92830033FAE3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC2A56218A92830033FAE3 /* UIViewExtension.swift */; };
+		A3EC2A59218A94850033FAE3 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC2A58218A94840033FAE3 /* UIScreenExtension.swift */; };
+		A3EC2A5B218A96AC0033FAE3 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC2A5A218A96AC0033FAE3 /* UIDeviceExtension.swift */; };
+		A3EC2A5D218A97A60033FAE3 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC2A5C218A97A60033FAE3 /* UIApplicationExtension.swift */; };
+		A3EC2A5F218A98160033FAE3 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC2A5E218A98160033FAE3 /* NSObjectExtension.swift */; };
+		A3EC2A61218A9A030033FAE3 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EC2A60218A9A030033FAE3 /* BundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3E4C75E218A892100BEBE40 /* SwiftyExtensionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyExtensionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E4C761218A892100BEBE40 /* SwiftyExtensionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyExtensionKit.h; sourceTree = "<group>"; };
 		A3E4C762218A892100BEBE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EC2A56218A92830033FAE3 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A3EC2A58218A94840033FAE3 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		A3EC2A5A218A96AC0033FAE3 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		A3EC2A5C218A97A60033FAE3 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		A3EC2A5E218A98160033FAE3 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		A3EC2A60218A9A030033FAE3 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +58,14 @@
 		A3E4C760218A892100BEBE40 /* SwiftyExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
-				A3E4C761218A892100BEBE40 /* SwiftyExtensionKit.h */,
 				A3E4C762218A892100BEBE40 /* Info.plist */,
+				A3E4C761218A892100BEBE40 /* SwiftyExtensionKit.h */,
+				A3EC2A56218A92830033FAE3 /* UIViewExtension.swift */,
+				A3EC2A58218A94840033FAE3 /* UIScreenExtension.swift */,
+				A3EC2A5A218A96AC0033FAE3 /* UIDeviceExtension.swift */,
+				A3EC2A5C218A97A60033FAE3 /* UIApplicationExtension.swift */,
+				A3EC2A5E218A98160033FAE3 /* NSObjectExtension.swift */,
+				A3EC2A60218A9A030033FAE3 /* BundleExtension.swift */,
 			);
 			path = SwiftyExtensionKit;
 			sourceTree = "<group>";
@@ -96,6 +114,7 @@
 				TargetAttributes = {
 					A3E4C75D218A892100BEBE40 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -132,6 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EC2A5B218A96AC0033FAE3 /* UIDeviceExtension.swift in Sources */,
+				A3EC2A5F218A98160033FAE3 /* NSObjectExtension.swift in Sources */,
+				A3EC2A57218A92830033FAE3 /* UIViewExtension.swift in Sources */,
+				A3EC2A5D218A97A60033FAE3 /* UIApplicationExtension.swift in Sources */,
+				A3EC2A59218A94850033FAE3 /* UIScreenExtension.swift in Sources */,
+				A3EC2A61218A9A030033FAE3 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +288,7 @@
 		A3E4C773218A892100BEBE40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -282,6 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +317,7 @@
 		A3E4C774218A892100BEBE40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
